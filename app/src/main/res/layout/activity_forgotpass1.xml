@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    tools:context=".activities.Forgotpass1">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/forgpass1rl">
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/applogo"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/imgl"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgl"
+            android:text="Enter the Registered Mobile number and email Id :"
+            android:textSize="20dp"
+            android:id="@+id/txttxt"
+            android:textColor="@color/back"
+            android:layout_marginLeft="15dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@color/back"
+            android:id="@+id/forgmob"
+            android:drawableLeft="@drawable/mobile"
+            android:layout_below="@+id/txttxt"
+            android:hint="Mobile Number"
+            android:inputType="number"
+            android:maxLines="1"
+            android:maxLength="10"
+            android:padding="2dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@color/back"
+            android:id="@+id/formail"
+            android:drawableLeft="@drawable/email"
+            android:layout_below="@+id/forgmob"
+            android:hint=" Email"
+    
+            android:maxLines="1"
+    
+            android:padding="2dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/fornext"
+            android:layout_below="@+id/formail"
+            android:text="next"
+            android:textSize="20dp"
+            android:textColor="@color/back"
+            android:padding="2dp"/>
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/forpass1progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>
+

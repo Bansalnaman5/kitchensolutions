@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".activities.Forgpass2">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl2">
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/applogo"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/forgpass2img"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the Received OTP on the Registered mail :"
+            android:textSize="20dp"
+            android:textColor="@color/back"
+            android:id="@+id/txtfor"
+            android:layout_below="@id/forgpass2img"
+            android:padding="10dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/back"
+            android:padding="10dp"
+            android:id="@+id/forotp"
+            android:layout_margin="10dp"
+            android:hint="Enter OTP(4 digit)"
+            android:layout_below="@id/txtfor"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/back"
+            android:padding="10dp"
+            android:id="@+id/forpass1"
+            android:layout_margin="10dp"
+            android:inputType="numberPassword"
+            android:hint="Enter New Password"
+            android:layout_below="@id/forotp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/back"
+            android:padding="10dp"
+            android:id="@+id/forpass2"
+            android:layout_margin="10dp"
+            android:inputType="numberPassword"
+            android:hint="Confirm New Password"
+            android:layout_below="@id/forpass1"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/fornext"
+            android:layout_below="@+id/forpass2"
+            android:text="proceed"
+            android:textSize="20dp"
+            android:textColor="@color/back"
+            android:padding="2dp"/>
+    </RelativeLayout>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/for2prog"/>
+
+</RelativeLayout>

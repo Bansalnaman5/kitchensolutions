@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Kitchen solutions</string>
+    <string name="home">Home</string>
+    <string name="my_profile">My Profile</string>
+    <string name="favorites">Favourites</string>
+    <string name="order_history">Order History</string>
+    <string name="open">Navigation View</string>
+    <string name="Close">Navigation View Closed</string>
+    <string name="faqs">Faq\'s</string>
+    <string name="logout">logout</string>
+    <string name="filter">filter</string>
+    <string name="title_activity_starting">starting</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_login">login</string>
+    <string name="title_activity_registeruser">registeruser</string>
+    <string name="title_activity_forgotpass1">forgotpass1</string>
+    <string name="title_activity_forgpass2">forgpass2</string>
+    <string name="title_dashboard">dashboard</string>
+    <array name="sorttext">
+        <item>Low To High(Cost)</item>
+        <item>High to Low(Cost)</item>
+        <item>User Rating</item>
+    </array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_checkoutcart">checkoutcart</string>
+
+</resources>

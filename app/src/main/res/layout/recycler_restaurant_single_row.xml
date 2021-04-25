@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/restaurantrow">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/rescardimg"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/applogo" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:id="@+id/rescardrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/txtresname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Name of res"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:id="@+id/favimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="2dp"
+                    android:padding="4dp"
+                    android:src="@drawable/emptyfav" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rescardrl"
+                android:layout_alignParentBottom="true">
+
+                <TextView
+                    android:id="@+id/txtcostres"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:padding="4dp"
+                    android:text="450/person"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/txtresrating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="2dp"
+                    android:padding="8dp"
+                    android:text="5.0"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

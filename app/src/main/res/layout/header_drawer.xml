@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:padding="12dp">
+    <ImageView
+        android:id="@+id/drawerimg"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/applogo"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="12dp"
+        />
+    <TextView
+        android:id="@+id/txtdrawertext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:clickable="true"
+        android:textStyle="bold"
+        android:text="username"
+        android:textAllCaps="false"
+        android:textColor="@color/back"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/usercontact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dip"
+        android:textAllCaps="false"
+        android:text="user contact number"
+        android:textColor="@color/back"
+        android:textStyle="bold"
+        android:textSize="17sp"/>
+
+
+
+
+</LinearLayout>

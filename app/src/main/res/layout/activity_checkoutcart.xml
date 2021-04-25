@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Checkoutcart">
+    <RelativeLayout
+        android:id="@+id/cartrl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/cartll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_below="@+id/Toolbaar"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:id="@+id/txtresorder"
+                android:textSize="20dp"
+                android:text="Restaurant Name:"
+                android:textAllCaps="false"
+                android:textColor="@color/back"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/restnamecart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textSize="20dp"
+                android:text="Restaurant Name "
+                android:textAllCaps="false"
+                android:textColor="@color/back"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/cartll"
+            android:background="@color/colorPrimaryDark"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cartrecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/orderconbtn"
+            android:layout_below="@+id/view1"
+            android:layout_margin="8dp"
+            android:padding="8dp"/>
+
+        <Button
+            android:id="@+id/orderconbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"
+            android:text="Confirm order and place"
+            android:textColor="@color/back"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rlprogress"
+        android:visibility="invisible">
+
+        <ProgressBar
+            android:id="@+id/cartprogbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+</RelativeLayout>
+
+
+
